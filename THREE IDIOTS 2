@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+            Scanner sc =new Scanner(System.in);
+
+    float num1=sc.nextFloat();
+       float num2=sc.nextFloat();
+       float num3=sc.nextFloat();
+       float num4=sc.nextFloat();
+    float x1=(num1+num3)/2;
+        float x2=(num2+num4)/2;
+    System.out.printf("Binoy's house is located at (%.1f,%.1f)",x1,x2);
+    }
+}
