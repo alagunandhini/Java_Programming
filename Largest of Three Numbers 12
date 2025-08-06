@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc =new Scanner(System.in);
+        int num1=sc.nextInt();
+        int num2=sc.nextInt();
+         int num3=sc.nextInt(); 
+        
+        if(num1>num2){
+            if(num1>num3){
+                System.out.print("a is largest then b and c");
+            }
+            
+        }
+        else if(num2>num3){
+             System.out.print("b is largest then a and c");
+            
+            
+        }
+        else{
+             System.out.print("c is largest then a and b");
+        }
+    }
+}
