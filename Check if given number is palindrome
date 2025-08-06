@@ -1,0 +1,38 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc =new Scanner(System.in);
+        int num=sc.nextInt();
+        int original=num;
+        int rev=0,count=0;
+        while(num>0){
+            int ld=num%10;
+            num/=10;
+            count++;
+            rev =(rev*10)+ld;
+            
+            
+        }
+        
+      if(count==3){
+        if(original==rev){
+            System.out.print("palindrome");
+        }
+        else{
+            System.out.print("not palindrome");
+            
+        }
+        
+        
+    }else{
+          System.out.print("Invalid Input");
+          
+      }
+    
+    
+    }
+}
