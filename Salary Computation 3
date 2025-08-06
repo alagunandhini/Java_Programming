@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int sal=sc.nextInt();
+        float HRA,DA;
+        if(sal<15000){
+            HRA =0.15f*sal;
+            DA= 0.9f*sal;
+            }
+        else{
+           HRA=5000;
+           DA= 0.98f*sal;
+        }
+        float GS=sal+HRA+DA;
+        System.out.printf("%.2f",GS);
+        
+    }
+}
