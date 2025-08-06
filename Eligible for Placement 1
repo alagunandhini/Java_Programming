@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc =new Scanner(System.in);
+        String name=sc.next();
+        int arr=sc.nextInt();
+        int grade=sc.nextInt();
+        System.out.printf("Name of the Student:%s",name);
+          System.out.printf("\n");
+        
+        
+        if(arr==1 && grade>70){
+            System.out.printf("%s is Eligible for Placement",name);
+        }
+        else if((arr==1||arr==2) && grade>75 ){
+            System.out.printf("%s is Eligible for Placement",name);
+            
+        }
+        else{
+             System.out.printf("%s is Not Eligible for Placement",name);
+            
+        }
+    }
+}
