@@ -1,0 +1,54 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc =new Scanner(System.in);
+        int size=sc.nextInt();
+        int[] arr=new int[size];
+        for(int i=0;i<size;i++){
+            arr[i]= sc.nextInt();
+            
+        }
+     
+        
+        int even=(size/2)+1;
+        int odd=size/2;
+           int[] evenarr=new int[even];
+         int[] oddarr=new int[odd];
+        int j=0;
+        
+        for(int i=0;i<size;i+=2){
+            evenarr[j]=arr[i];
+            j++;
+            
+            
+            
+            
+        }
+        int k=0;
+          for(int i=1;i<size;i+=2){
+            oddarr[k]=arr[i];
+              k++;
+              
+              
+            
+            
+            
+            
+        }
+        
+        Arrays.sort(evenarr);
+        Arrays.sort(oddarr);
+        int lar=evenarr[even-2];
+        int smal=oddarr[1];
+        int sum=lar+smal;
+        System.out.println("Sum="+sum);
+    
+        
+        
+        
+    }
+}
