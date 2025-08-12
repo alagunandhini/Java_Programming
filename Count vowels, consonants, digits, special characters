@@ -1,0 +1,41 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine().toLowerCase();
+        int vcount=0,conCount=0,digitCount=0,SpecCount=0;
+        for(int i=0;i<str.length();i++){
+            char ch=str.charAt(i);
+            if(ch>='a' &&  ch<='z'){
+            if(ch=='a'|| ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+                vcount++;
+            }
+                else{
+                    conCount++;
+                }
+            }
+            else if(ch>='0'&& ch<='9'){
+                digitCount++;
+                
+            }
+            else{
+                SpecCount++;
+            }
+        }
+            System.out.println("vowels:"+vcount);
+            System.out.println("consonants:"+conCount);
+             System.out.println("digits:"+digitCount);
+            System.out.println("special characters:"+SpecCount);
+            
+            
+            
+            
+            
+            
+        
+    }
+}
